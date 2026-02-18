@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="../CODIGO_ACCESIBLE/img/logo.png" alt="Logo de Tienda Online">
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="banner">
+            <h1>¡Ofertas Increíbles!</h1>
+            <p>Hasta 70% de descuento</p>
+        </section>
+
+        <section aria-labelledby="bienvenida">
+            <h2 id="bienvenida">Bienvenido a nuestra tienda</h2>
+        </section>
+
+        <section id="productos" aria-labelledby="productos-destacados">
+            <h2 id="productos-destacados">Productos destacados</h2>
+            
+            <div class="productos">
+                <article class="producto">
+                    <img src="../CODIGO_ACCESIBLE/img/producto1.png" alt="Camiseta azul de algodón">
+                    <h3>Camiseta Azul</h3>
+                    <p class="precio">29.99€</p>
+                    <button aria-label="Añadir Camiseta Azul al carrito">Añadir al carrito</button>
+                </article>
+                
+                <article class="producto">
+                    <img src="../CODIGO_ACCESIBLE/img/producto2.png" alt="Pantalón negro de vestir">
+                    <h3>Pantalón Negro</h3>
+                    <p class="precio">49.99€</p>
+                    <button aria-label="Añadir Pantalón Negro al carrito">Añadir al carrito</button>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="suscripcion">
+            <h2 id="suscripcion">Suscríbete</h2>
+
+            <form>
+                <div>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div>
+                    <label for="pais">País *</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="ES">España</option>
+                        <option value="FR">Francia</option>
+                        <option value="PT">Portugal</option>
+                    </select>
+                </div>
+
+                <p>* Campos obligatorios</p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="horarios">
+            <h2 id="horarios">Horarios de atención</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Día</th>
+                        <th scope="col">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Lunes</th>
+                        <td>9:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Martes</th>
+                        <td>9:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Miércoles</th>
+                        <td>9:00 - 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <p>© 2026 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
