@@ -200,7 +200,7 @@ input:focus-visible, select:focus-visible {
 
 .error {
     display: none;
-    color: #b00020;
+    color: #9a001b;
     font-size: 14px;
     margin-top: 5px;
 }
